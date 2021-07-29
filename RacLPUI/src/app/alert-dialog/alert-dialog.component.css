@@ -1,0 +1,49 @@
+::ng-deep .mat-dialog-container
+{
+  background-color:#001e50!important;
+  border: 1px solid#001e50 !important;
+  border-radius: 5px!important;
+  width: 80vw!important;
+}
+.closeDialogButton
+{
+  font-size: 25px;
+  background-color:#006384;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.closeDialogButton:focus,
+.closeDialogButton:hover
+{
+  box-shadow: 0 -6px 10px 0 #AED6F1  , 0 6px 10px 0 #AED6F1 ;
+}
+.copyButton
+{
+  background-color: #D6EAF8;
+}
+.copyButton:focus,
+.copyButton:hover
+{
+  box-shadow: 0 -6px 10px 0 #AED6F1  , 0 6px 10px 0 #AED6F1 ;
+  background-color: white;
+}
+.dialogContentBelow3
+{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 22px;
+}
+.dialogContentOver3
+{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  max-height: 50vh!important;
+}
+

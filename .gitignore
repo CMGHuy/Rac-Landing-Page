@@ -1,0 +1,7 @@
+# files
+/RacLPService/target/RacLPService-1.0.0-SNAPSHOT.jar
+/RacLPService/target/RacLPService-1.0.0-SNAPSHOT.jar.original
+
+# folders
+/persistent/archive/
+/persistent/inbox/

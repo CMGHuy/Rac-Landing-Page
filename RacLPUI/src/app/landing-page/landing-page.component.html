@@ -1,0 +1,44 @@
+<!--<div *ngIf="componentOn" style="background-color:#006384; width: 100%; height: 100%; overflow-x: hidden;">-->
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img id="VWLogo" alt="VW Logo" src = "../../assets/images/VW_Fleet_Logo.png"/>
+</div>
+
+<!--Content-->
+<div class="content" role="main">
+  <!--  Company Name-->
+  <h4>{{companyTitel}}</h4>
+  <!--  Import Type-->
+  <h2>{{importTypeFullName}}</h2>
+
+  <!--  Container-->
+  <div class="container" align="center">
+    <!--    Choose file -->
+    <div >
+      <input type='file' class="custom-file-input custom-file-input-1" id="customFile" name="filename"
+             (change)="verifyFile($event)" style="display: none"  required/>
+      <label for="customFile">
+              <span width="20" height="17" viewBox="0 0 20 17">
+                <mat-icon>cloud_upload</mat-icon>
+              </span>
+        <span>{{fileNameDisplay}}</span>
+      </label>
+    </div>
+
+    <!--      Submit Button-->
+    <button type="submit" id="submitButton" class="submit-button" *ngIf = "submitButtonOn" (click)="onSubmit()">
+      <span> Submit </span>
+    </button>
+    <button type="button" id="fakeSubmitButton" class="submit-button" disabled="disabled" *ngIf="fakeButtonOn">
+      Submit
+      <i class="fa fa-minus-circle"></i>
+    </button>
+
+  </div>
+</div>
+
+<!--Uploading Loader-->
+<app-loader-upload-file [loaderEnable] = "loaderOn"></app-loader-upload-file>
+
+<!--</div>
+<router-outlet></router-outlet>-->

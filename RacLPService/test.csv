@@ -1,0 +1,4 @@
+﻿# VWCHLImportCSVIO
+# VW ChassiLoad VIN.Doctype,VW ChassiLoad VIN.Company Id,VW ChassiLoad VIN.Reimbursement Id,VW ChassiLoad VIN.Vin Nr,VW ChassiLoad VIN.Cust Brand,VW ChassiLoad VIN.Cust Region,VW ChassiLoad VIN.Cust Country,VW ChassiLoad VIN.Cust Model,VW ChassiLoad VIN.Cust Reg Dt
+CHL,1-VW,I-12345,Vin1234,BMW,Europe,Germany,Model1,01/15/2020
+CHL,1-VW,I-12345,Vin1235,Audi,Europe,Austria,Model2,02/17/2020

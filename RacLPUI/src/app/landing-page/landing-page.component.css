@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root
+{
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+/**********************************************************************************************************************/
+/*Toolbar*/
+.toolbar {
+  background-color:white;
+  height: 120px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+#VWLogo
+{
+  display: block;
+  margin-left: 30px;
+  padding-top: 5px;
+  width: 110px;
+}
+/**********************************************************************************************************************/
+/*Company titel and import type*/
+h4,h2
+{
+  margin-top: 70px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+/**********************************************************************************************************************/
+/*Container*/
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(27, 27, 50, 0.8) !important;
+  height: 60%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+/**********************************************************************************************************************/
+/*Choose File*/
+.custom-file-input + label
+{
+  max-width: 80%;
+  font-size: 35px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  margin: 20px;
+}
+.custom-file-input + label span {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  /* 4px */
+  margin-right: 0.25em;
+  /* 4px */
+}
+.custom-file-input-1 + label {
+  color: #f1e5e6;
+  background-color: #001e50;
+  border: solid white;
+  border-radius: 10px;
+}
+.custom-file-input-1:focus + label,
+.custom-file-input-1.has-focus + label,
+.custom-file-input-1 + label:hover {
+  background-color: white;
+  color: #001e50;
+  border: solid #001e50;
+  box-shadow: 0 -6px 10px 0 #AED6F1  , 0 6px 10px 0 #AED6F1 ;
+}
+/**********************************************************************************************************************/
+/*Submit button*/
+#fakeSubmitButton
+{
+  background-color: darkgray;
+  cursor: not-allowed;
+}
+#submitButton
+{
+  background-color: #37af65;
+  cursor: pointer;
+}
+.submit-button
+{
+  width: 27%;
+  font-size: 22px;
+  padding: 0.75rem;
+  color: inherit;
+  border-radius: 10px;
+  margin-top: 150px;
+  height: 70px;
+  font-size: 25px;
+}
+.submit-button span
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.submit-button span:after
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.submit-button:hover span
+{
+  padding-right: 25px;
+}
+
+.submit-button:hover span:after
+{
+  opacity: 1;
+  right: 0;
+}
+.submit-button:focus span
+{
+  padding-right: 25px;
+}
+.submit-button:focus
+{
+  box-shadow: 0 -6px 10px 0 #AED6F1  , 0 6px 10px 0 #AED6F1 ;
+}
+#submitButton:hover
+{
+ box-shadow: 0 -6px 10px 0 #AED6F1  , 0 6px 10px 0 #AED6F1 ;
+}
+.submit-button:focus span:after
+{
+  opacity: 1;
+  right: 0;
+}
+i
+{
+  margin-left: 10px;
+}
+
+.mat-icon{
+  font-size: 35px!important;
+  margin-right:10px;
+  margin-top:10px;
+}

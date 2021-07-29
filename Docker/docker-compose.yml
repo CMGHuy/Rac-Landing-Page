@@ -1,0 +1,19 @@
+# Authors : ar.sur@reply.de
+version: '3'
+services:
+    # *************** Rac Landing Page Service ************************
+    rac-landing-page:
+        image: rac-landing-page
+        build: .
+        network_mode: bridge
+        container_name: rac-landing-page
+        expose:
+            - 8080
+        ports:
+            - 8080:8080
+        environment:
+            LOGGING_FILE: /persistent/logs/rac-landing-page.log
+            SPRING_PROFILES_ACTIVE: dev
+        restart: unless-stopped
+        volumes:
+            - /etc/rac-landing-page:/persistent

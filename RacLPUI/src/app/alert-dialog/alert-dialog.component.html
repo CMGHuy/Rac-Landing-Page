@@ -1,0 +1,45 @@
+<mat-dialog-actions align="end">
+  <button class="closeDialogButton" mat-dialog-close>&#10006;</button>
+</mat-dialog-actions>
+<div align="center">
+  <ng-container *ngIf = "data.errorCode == '0'; then thenBlock; else elseBlock"></ng-container>
+  <ng-template #thenBlock>
+      <img align="center" src="{{successImageSource}}" alt="successful Upload">
+  </ng-template>
+  <ng-template #elseBlock>
+      <img align="center" src=".{{failImageSource}}" alt="failed Upload">
+  </ng-template>
+</div>
+
+<mat-dialog-content align="center" *ngIf="dataKey.length <= 8" class="dialogContentBelow3">
+  <div *ngFor="let text of dataKey">
+    <p style="font-size: 25px;">{{text}}</p>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-content align="center" tabindex="0" *ngIf="dataKey.length > 8" class="mat-typography dialogContentOver3">
+  <div *ngFor="let text of dataKey">
+    <p style="font-size: 20px;">{{text}}</p>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center" style="margin-top:30px;">
+ <!-- <button
+          (click)="copyData(contentToClipboard)"
+          class="copyButton" mat-button> Copy to clipboard
+  </button>-->
+
+  <button ngxClipboard [cbContent]="contentToClipboard" (cbOnError)="copied($event)" (cbOnSuccess)="copied($event)"
+          class="copyButton" mat-button>Copy to clipboard</button>
+<!--  (click)="handleClipboardResponse()" (click)="downloadFile()"-->
+<!--  [cdkCopyToClipboard]="contentToClipboard" [cdkCopyToClipboardAttempts]="100"-->
+<!--  [cdkCopyToClipboard] = "contentToClipboard"-->
+  <!--(cdkCopyToClipboardCopied) = "checkCopied($event)"-->
+ <!-- <button (click)="copyAchievements()"
+          class="copyButton" mat-button> Copy to clipboard
+  </button>-->
+<!--  (cdkCopyToClipboardCopied) = "checkCopied($event)"-->
+  <!--<button class="copyButton" mat-button (click)="copyToClipboard()"> Copy to clipboard
+  </button>-->
+</mat-dialog-actions>
+

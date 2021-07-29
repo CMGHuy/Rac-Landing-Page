@@ -1,0 +1,9 @@
+{
+  "RSC" : "Importer Feedback Upload",
+  "RIL" : "Chassis Load Upload (Importer)",
+  "RIB" : "Chassis Load Upload (Importer)",
+  "RCL" : "Chassis Load Upload (Customer)",
+  "RCB" : "Chassis Load Upload (Customer)",
+  "RCC" : "Chassis Load Correction Upload (Customer)",
+  "RIC" : "Chassis Load Correction Upload (Importer)"
+}
